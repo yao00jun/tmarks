@@ -127,8 +127,8 @@ export function BookmarkStatisticsPage({ embedded = false }: BookmarkStatisticsP
   }
 
   return (
-    <div className={`min-h-screen bg-background ${isMobile ? 'pb-20' : ''}`}>
-      {isMobile && (
+    <div className={`${embedded ? '' : 'min-h-screen'} bg-background ${isMobile && !embedded ? 'pb-20' : ''}`}>
+      {isMobile && !embedded && (
         <MobileHeader
           title={t('statistics.title')}
           showMenu={false}
@@ -137,7 +137,7 @@ export function BookmarkStatisticsPage({ embedded = false }: BookmarkStatisticsP
         />
       )}
 
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8">
+      <div className={`${embedded ? '' : 'max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8'}`}>
         <div className="mb-6 sm:mb-8">
           {!isMobile && !embedded && (
             <Link
@@ -160,7 +160,7 @@ export function BookmarkStatisticsPage({ embedded = false }: BookmarkStatisticsP
             <select
               value={granularity}
               onChange={(e) => setGranularity(e.target.value as Granularity)}
-              className="px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground"
+              className={`px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground ${embedded ? 'ml-auto' : ''}`}
             >
               <option value="day">{t('statistics.granularity.day')}</option>
               <option value="week">{t('statistics.granularity.week')}</option>

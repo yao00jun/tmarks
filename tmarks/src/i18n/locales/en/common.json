@@ -194,33 +194,5 @@
     "copyError": "Copy Error",
     "openMenu": "Open Menu",
     "more": "More"
-  },
-  "onboarding": {
-    "welcome": {
-      "title": "Welcome to TMarks",
-      "description": "TMarks is a smart bookmark management tool that helps you efficiently collect, organize, and find web bookmarks. Let's take a few minutes to complete the basic setup."
-    },
-    "extension": {
-      "title": "Install Browser Extension",
-      "description": "After installing the browser extension, you can save the current page as a bookmark with one click and automatically sync to TMarks. Supports Chrome, Edge, Firefox and other major browsers.",
-      "action": "Download Extension"
-    },
-    "apiKey": {
-      "title": "Generate API Key",
-      "description": "The API key is used for secure communication between the browser extension and TMarks server. Please keep it safe and do not share it with others.",
-      "action": "Generate Key"
-    },
-    "import": {
-      "title": "Import Existing Bookmarks",
-      "description": "You can import existing bookmark data from browsers or other bookmark management tools. Supports HTML and JSON formats, and you can use AI for smart organization.",
-      "action": "Import Bookmarks"
-    },
-    "done": {
-      "title": "All Set!",
-      "description": "Congratulations on completing the basic setup! You can now start using TMarks to manage your bookmarks. If you have any questions, feel free to check the help documentation."
-    },
-    "skip": "Skip",
-    "next": "Next",
-    "start": "Get Started"
   }
 }
